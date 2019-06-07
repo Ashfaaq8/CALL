@@ -21,7 +21,8 @@ function onError(result) {
 }
 
 function onCall(){
-	window.plugins.CallNumber.callNumber(onSuccess, onError, "57832250", true);
+	window.plugins.CallNumber.callNumber(onSuccess, onError, "var e = document.getElementById("ddlViewBy");
+var strUser = e.options[e.selectedIndex].value;", true);
 	
 }
 
@@ -40,6 +41,11 @@ function onCall(){
  <h1>CAll</h1>
  </div>
  <div data-role="main" class="ui-content">
+	 <select id="ddlViewBy">
+  <option value="57453398">test1</option>
+  <option value="57000800" >test2</option>
+  <option value="56332002">test3</option>
+</select>
  <button class="ui-btn" onclick="onCall()" style="background-color: yellow ;">CAllNumber</button>
 
  
