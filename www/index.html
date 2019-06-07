@@ -19,9 +19,15 @@ function onSuccess(result){
 function onError(result) {
   console.log("Error:"+result);
 }
+	function GetNumber(){
+				var e = document.getElementById("number");
+				var result = e.options[e.selectedIndex].value;
+				
+				document.getElementById("result").innerHTML = result;
+			
 
 function onCall(){
-	window.plugins.CallNumber.callNumber(onSuccess, onError, "57453397" , true);
+	window.plugins.CallNumber.callNumber(onSuccess, onError, result , true);
 	
 }
 
@@ -39,12 +45,13 @@ function onCall(){
  <div data-role="header">
  <h1>CAll</h1>
  </div>
- <div data-role="main" class="ui-content">
-	 <select id="ddlViewBy">
+	<select id="number">
   <option value="57453398">test1</option>
   <option value="57000800" >test2</option>
   <option value="56332002">test3</option>
 </select>
+ <div data-role="main" class="ui-content">
+	 
  <button class="ui-btn" onclick="onCall()" style="background-color: yellow ;">CAllNumber</button>
 
  
