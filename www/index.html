@@ -19,7 +19,8 @@ function onSuccess(result){
 function onError(result) {
   console.log("Error:"+result);
 }
-	function GetNumber(){
+	var usernumber : int;
+	function onGetNumber(){
 				var e = document.getElementById("number");
 				var usernumber = e.options[e.selectedIndex].value;
 				
@@ -27,7 +28,7 @@ function onError(result) {
 			
 
 function onCall(){
-	window.plugins.CallNumber.callNumber(onSuccess, onError, usernumber , true);
+	window.plugins.CallNumber.callNumber(onSuccess, onError, usernumber" , true);
 	
 }
 
@@ -52,7 +53,7 @@ function onCall(){
 </select>
  <div data-role="main" class="ui-content">
 	 
- <button class="ui-btn" onclick="GetNumber() onCall()" style="background-color: yellow ;">CAllNumber</button>
+ <button class="ui-btn" onclick="onGetNumber(); onCall();" style="background-color: yellow ;">CAllNumber</button>
 
  
  </div>
