@@ -8,14 +8,14 @@
 <!-- versionCode is optional and Android only -->
 <!-- version is in major.minor.patch format-->
 
-  <name>Calculator 1000</name>
+  <name>Phone Call 3000</name>
 
   <description>
-      An example for Mobile App Development Lecture at UTM.
+     Simple Phone Call App
   </description>
 
-  <author href="https://build.phonegap.com" email="geerish.suddul@gmail.com">
-      Geerish Suddul
+  <author href="https://build.phonegap.com" email="ashfaaq.p.m@gmail.com">
+     Purahoo Mohamad Ashfaaq
   </author>
 
 </widget>
