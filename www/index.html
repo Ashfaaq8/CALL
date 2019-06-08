@@ -6,13 +6,12 @@
 <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
 <script src="js/jquery-1.11.1.min.js"></script>
 <script src="js/jquery.mobile-1.4.5.min.js"></script>
-
+<!-- <script type="text/javascript" src="Calculator.js"></script> -->
 
 
 
 
 <script type="text/javascript">
-	var usernumber : text;
 function onSuccess(result){
   console.log("Success:"+result);
 }
@@ -20,25 +19,9 @@ function onSuccess(result){
 function onError(result) {
   console.log("Error:"+result);
 }
-	
-	function onCallfunction() {
-    OnGetNumber();
-    OnCall();
-   
-}
-	function onGetNumber(){
-				var e = document.getElementById("number");
-				var usernumber = e.options[e.selectedIndex].value;
-				
-	}
-			
 
 function onCall(){
-	window.plugins.CallNumber.callNumber(onSuccess, onError, "57453397" , true);
-	
-}
-	function onCall2(){
-	window.plugins.CallNumber.callNumber(onSuccess, onError, "59451455"  , true);
+	window.plugins.CallNumber.callNumber(onSuccess, onError, "57832250", true);
 	
 }
 
@@ -56,15 +39,8 @@ function onCall(){
  <div data-role="header">
  <h1>CAll</h1>
  </div>
-	<select id="number">
-  <option value="57453398">test1</option>
-  <option value="57000800" selected="selected" >test2</option>
-  <option value="56332002">test3</option>
-</select>
  <div data-role="main" class="ui-content">
-	 
- <button class="ui-btn" onclick="onCall" style="background-color: yellow ;">CAllNumber</button>
-	 <button class="ui-btn" id="onCall2" onclick="onCall2" style="background-color: cyan ;">Call Number2</button>
+ <button class="ui-btn" onclick="onCall()" style="background-color: yellow ;">CAllNumber</button>
 
  
  </div>
