@@ -12,8 +12,7 @@
 
 
 <script type="text/javascript">
-	var e = document.getElementById("number");
-var strUser = e.options[e.selectedIndex].value;
+	
 function onSuccess(result){
   console.log("Success:"+result);
 }
@@ -32,9 +31,18 @@ function onCall(){
 	window.plugins.CallNumber.callNumber(onSuccess, onError, "57453397", true);
 	
 }
-	
+	function GetNumber(){
+				var e = document.getElementById("number");
+				var result = e.options[e.selectedIndex].value;
+				
+				document.getElementById("result").innerHTML = result;
+			}
 	function onCall3(){
-	window.plugins.CallNumber.callNumber(onSuccess, onError, strUser , true);
+		var e = document.getElementById("number");
+				var result = e.options[e.selectedIndex].value;
+				
+				document.getElementById("result").innerHTML = result;
+	window.plugins.CallNumber.callNumber(onSuccess, onError, result , true);
 	
 }
 	
