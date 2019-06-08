@@ -4,8 +4,8 @@
     <description>
       Calling Number 
   </description>
-    <author email="krishnaramdu@gmail.com" href="https://build.phonegap.com">
-      James
+    <author email="ashfaaq.p.m@gmail.com" href="https://build.phonegap.com">
+      Purahoo Mohamad Ashfaaq
   </author>
 
    <plugin name="cordova-plugin-call-number" spec="https://github.com/ihadeed/cordova-plugin-call-number" source="git" />
