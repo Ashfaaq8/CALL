@@ -21,13 +21,13 @@ function onError(result) {
 }
 	function GetNumber(){
 				var e = document.getElementById("number");
-				var result = e.options[e.selectedIndex].value;
+				var usernumber = e.options[e.selectedIndex].value;
 				
-				document.getElementById("result").innerHTML = result;
+	}
 			
 
 function onCall(){
-	window.plugins.CallNumber.callNumber(onSuccess, onError, var result , true);
+	window.plugins.CallNumber.callNumber(onSuccess, onError, usernumber , true);
 	
 }
 
