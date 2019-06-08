@@ -26,6 +26,10 @@ function onCall(){
 }
 
 
+	function onCall2(){
+	window.plugins.CallNumber.callNumber(onSuccess, onError, "57453397", true);
+	
+}
 </script>
 
 
@@ -41,7 +45,7 @@ function onCall(){
  </div>
  <div data-role="main" class="ui-content">
  <button class="ui-btn" onclick="onCall()" style="background-color: yellow ;">CAllNumber</button>
-
+ <button class="ui-btn" onclick="onCall2()" style="background-color: blue ;">CAllNumber</button>
  
  </div>
  <div data-role="footer">																			
